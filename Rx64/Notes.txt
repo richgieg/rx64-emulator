@@ -1,0 +1,31 @@
+﻿
+
+
+REAL MODE BEHAVIOR:
+
+
+If a single-byte instruction starts at 0xffff, after it executes the CPU will increment IP by one, which makes it wrap to 0x0000. It will continue to execute
+instructions at 0x0000 if there are any. It may still raise a "segment overrun" exception though.
+
+
+If a two-byte instruction starts at 0xffff, the instruction can't execute and a "segment overrun" exception will occur.
+
+
+
+
+
+
+
+REGARDLESS OF REAL MODE OR PROTECTED MODE:
+
+If 16-bit addressing is used, the largest possible offset is 0xffff. Any address calculation is truncated at 16-bits in this addressing mode.
+
+Under 32-bit Windows, using WinDbg, I was able to prove that:
+BX = 0xffff
+DI = 0xffff
+lea		eax,[bx+di]
+Result: EAX = 0xfffe
+
+
+If 16-bit addressing is being used, a read or write to memory which tries to seek beyond the 0xffff offset (such as reading a DWORD from 0xfffe) will
+result in a "segment overrun" exception... regardless of being in real mode or protected mode.

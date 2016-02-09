@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{167A2111-65D4-4E6D-9BEC-35F2A775F904}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rx64</RootNamespace>
+    <AssemblyName>Rx64</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADC\ADC_AL_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADC\ADC_AX_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADC\ADC_EAX_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADC\ADC_r16_rm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADC\ADC_r32_rm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADC\ADC_r8_rm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADC\ADC_rm16_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADC\ADC_rm16_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADC\ADC_rm16_r16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADC\ADC_rm32_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADC\ADC_rm32_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADC\ADC_rm32_r32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADC\ADC_rm8_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADC\ADC_rm8_r8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADD\ADD_AL_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADD\ADD_AX_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADD\ADD_EAX_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADD\ADD_r16_rm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADD\ADD_r32_rm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADD\ADD_r8_rm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADD\ADD_rm16_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADD\ADD_rm16_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADD\ADD_rm16_r16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADD\ADD_rm32_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADD\ADD_rm32_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADD\ADD_rm32_r32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADD\ADD_rm8_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\ADD\ADD_rm8_r8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\CMP\CMP_AL_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\CMP\CMP_AX_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\CMP\CMP_EAX_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\CMP\CMP_r16_rm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\CMP\CMP_r32_rm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\CMP\CMP_r8_rm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\CMP\CMP_rm16_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\CMP\CMP_rm16_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\CMP\CMP_rm16_r16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\CMP\CMP_rm32_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\CMP\CMP_rm32_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\CMP\CMP_rm32_r32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\CMP\CMP_rm8_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\CMP\CMP_rm8_r8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\NEG\NEG_rm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\NEG\NEG_rm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\NEG\NEG_rm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\CALL\CALL_rel16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\CALL\CALL_rel32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\CALL\CALL_rm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\CALL\CALL_rm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\CALL\CALL_ptr16_16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\CALL\CALL_ptr16_32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\CALL\CALL_m16_16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\CALL\CALL_m16_32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JCXZ_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JECXZ_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JG_JNLE_rel32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JLE_JNG_rel32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JGE_JNL_rel32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JL_JNGE_rel32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JNP_JPO_rel32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JP_JPE_rel32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JNS_rel32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JS_rel32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JA_JNBE_rel32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JBE_JNA_rel32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JNE_JNZ_rel32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JE_JZ_rel32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JNC_JAE_JNB_rel32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JC_JB_JNAE_rel32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JNO_rel32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JO_rel32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JNC_JAE_JNB_rel16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JNC_JAE_JNB_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JA_JNBE_rel16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JA_JNBE_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JBE_JNA_rel16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JBE_JNA_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JC_JB_JNAE_rel16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JC_JB_JNAE_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JE_JZ_rel16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JE_JZ_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JGE_JNL_rel16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JGE_JNL_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JG_JNLE_rel16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JG_JNLE_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JLE_JNG_rel16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JLE_JNG_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JL_JNGE_rel16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JL_JNGE_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JNE_JNZ_rel16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JNE_JNZ_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JNO_rel16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JNO_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JNP_JPO_rel16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JNP_JPO_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JNS_rel16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JNS_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JO_rel16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JO_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JP_JPE_rel16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JP_JPE_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JS_rel16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\Jcc\JS_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\JMP\JMP_m16_16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\JMP\JMP_m16_32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\JMP\JMP_ptr16_16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\JMP\JMP_rm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\JMP\JMP_rm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\LOOPcc\LOOPNE_LOOPNZ_rel8_a16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\LOOPcc\LOOPNE_LOOPNZ_rel8_a32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\LOOPcc\LOOPE_LOOPZ_rel8_a16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\LOOPcc\LOOPE_LOOPZ_rel8_a32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\LOOP\LOOP_rel8_a16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\LOOP\LOOP_rel8_a32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\RET\RET_FAR_o16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\RET\RET_FAR_o32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\RET\RET_o16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\RET\RET_o32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\AND\AND_AL_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\AND\AND_AX_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\AND\AND_EAX_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\AND\AND_r16_rm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\AND\AND_r32_rm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\AND\AND_r8_rm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\AND\AND_rm16_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\AND\AND_rm16_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\AND\AND_rm16_r16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\AND\AND_rm32_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\AND\AND_rm32_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\AND\AND_rm32_r32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\AND\AND_rm8_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\AND\AND_rm8_r8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\FlagControl\CLC.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\FlagControl\CLD.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\FlagControl\CLI.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\FlagControl\CMC.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\DEC\DEC_rm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\DEC\DEC_r16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\DEC\DEC_r32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\DEC\DEC_rm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\DEC\DEC_rm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\INC\INC_r16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\INC\INC_r32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\INC\INC_rm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\INC\INC_rm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\INC\INC_rm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\OR\OR_AL_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\OR\OR_AX_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\OR\OR_EAX_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\OR\OR_r16_rm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\OR\OR_r32_rm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\OR\OR_r8_rm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\OR\OR_rm16_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\OR\OR_rm16_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\OR\OR_rm16_r16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\OR\OR_rm32_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\OR\OR_rm32_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\OR\OR_rm32_r32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\OR\OR_rm8_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\OR\OR_rm8_r8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\JMP\JMP_ptr16_32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\JMP\JMP_rel16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\JMP\JMP_rel32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ControlTransfer\JMP\JMP_rel8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_AL_moffs8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_AX_moffs16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_EAX_moffs32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_moffs8_AL.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_moffs16_AX.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_moffs32_EAX.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_r16_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_r16_rm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_r32_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_r32_rm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_r8_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_r8_rm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_rm16_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_rm16_r16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_rm16_Sreg.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_rm32_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_rm32_r32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_rm8_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_rm8_r8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\MOV\MOV_Sreg_rm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\NOT\NOT_rm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\NOT\NOT_rm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\NOT\NOT_rm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\POP\POP_DS_o16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\POP\POP_DS_o32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\POP\POP_ES_o16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\POP\POP_ES_o32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\POP\POP_FS_o16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\POP\POP_FS_o32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\POP\POP_GS_o16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\POP\POP_GS_o32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\POP\POP_r16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\POP\POP_r32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\POP\POP_rm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\POP\POP_rm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\POP\POP_SS_o16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\POP\POP_SS_o32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_CS_o16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_CS_o32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_DS_o16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_DS_o32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_ES_o16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_ES_o32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_FS_o16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_FS_o32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_GS_o16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_GS_o32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_imm8_o16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_imm8_o32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_r16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_r32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_rm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_rm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_SS_o16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DataTransfer\PUSH\PUSH_SS_o32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SBB\SBB_AL_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SBB\SBB_AX_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SBB\SBB_EAX_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SBB\SBB_r16_rm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SBB\SBB_r32_rm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SBB\SBB_r8_rm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SBB\SBB_rm16_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SBB\SBB_rm16_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SBB\SBB_rm16_r16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SBB\SBB_rm32_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SBB\SBB_rm32_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SBB\SBB_rm32_r32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SBB\SBB_rm8_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SBB\SBB_rm8_r8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\FlagControl\STC.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\FlagControl\STD.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\FlagControl\STI.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SUB\SUB_AX_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SUB\SUB_EAX_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SUB\SUB_r16_rm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SUB\SUB_r32_rm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SUB\SUB_r8_rm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SUB\SUB_rm16_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SUB\SUB_rm16_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SUB\SUB_rm16_r16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SUB\SUB_rm32_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SUB\SUB_rm32_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SUB\SUB_rm32_r32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SUB\SUB_rm8_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SUB\SUB_rm8_r8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BinaryArithmetic\SUB\SUB_AL_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BitByte\TEST\TEST_AL_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BitByte\TEST\TEST_AX_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BitByte\TEST\TEST_EAX_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BitByte\TEST\TEST_rm16_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BitByte\TEST\TEST_rm16_r16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BitByte\TEST\TEST_rm32_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BitByte\TEST\TEST_rm32_r32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BitByte\TEST\TEST_rm8_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\BitByte\TEST\TEST_rm8_r8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\XOR\XOR_AL_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\XOR\XOR_AX_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\XOR\XOR_EAX_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\XOR\XOR_r16_rm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\XOR\XOR_r32_rm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\XOR\XOR_r8_rm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\XOR\XOR_rm16_imm16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\XOR\XOR_rm16_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\XOR\XOR_rm16_r16.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\XOR\XOR_rm32_imm32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\XOR\XOR_rm32_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\XOR\XOR_rm32_r32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\XOR\XOR_rm8_imm8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Logical\XOR\XOR_rm8_r8.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\System\MOV\MOV_CRx_r32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\System\MOV\MOV_DRx_r32.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\System\MOV\MOV_r32_CRx.cs" />
+    <Compile Include="VirtualMachine\CPU\Instructions\System\MOV\MOV_r32_DRx.cs" />
+    <Compile Include="VirtualMachine\MemoryController\MemoryController.cs" />
+    <Compile Include="VirtualMachine\MemoryModule\MemoryModule.cs" />
+    <Compile Include="VirtualMachine\ProgrammableInterruptController\ProgrammableInterruptController.cs" />
+    <Compile Include="VirtualMachine\VirtualMachine.cs" />
+    <Compile Include="VirtualMachine\CPU\CPU.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VirtualMachine\VideoController\VideoController.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LICENSE.TXT" />
+    <Content Include="Notes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="VirtualMachine\CPU\Instructions\GeneralPurpose\DecimalArithmetic\" />
+    <Folder Include="VirtualMachine\CPU\Instructions\GeneralPurpose\EnterLeave\" />
+    <Folder Include="VirtualMachine\CPU\Instructions\GeneralPurpose\InputOutput\" />
+    <Folder Include="VirtualMachine\CPU\Instructions\GeneralPurpose\Miscellaneous\" />
+    <Folder Include="VirtualMachine\CPU\Instructions\GeneralPurpose\SegmentRegister\" />
+    <Folder Include="VirtualMachine\CPU\Instructions\GeneralPurpose\ShiftRotate\" />
+    <Folder Include="VirtualMachine\CPU\Instructions\GeneralPurpose\String\" />
+    <Folder Include="VirtualMachine\CPU\Instructions\x87_FPU\BasicArithmetic\" />
+    <Folder Include="VirtualMachine\CPU\Instructions\x87_FPU\Comparison\" />
+    <Folder Include="VirtualMachine\CPU\Instructions\x87_FPU\Control\" />
+    <Folder Include="VirtualMachine\CPU\Instructions\x87_FPU\DataTransfer\" />
+    <Folder Include="VirtualMachine\CPU\Instructions\x87_FPU\LoadConstants\" />
+    <Folder Include="VirtualMachine\CPU\Instructions\x87_FPU\Transcendental\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

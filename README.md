@@ -17,7 +17,7 @@ retrieval operations.
 
 ## How to Run
 
-*NOTE: This project must be run in "release" mode due to the Visual Studio debugger complaining
+*NOTE: This project must be run without debugging (CTRL+F5) due to the Visual Studio debugger complaining
 about non-GUI threads accessing the form controls.*
 
 - Load the solution in Visual Studio (originally written with VS 2010, but I've tested in VS 2015)

@@ -1,5 +1,5 @@
 # Rx64 Emulator
-**An emulator for the Intel x64 processor written in C#**
+**Intel x64 processor emulator written in C#**
 
 *NOTE: This is an old project of mine that is no longer maintained. I recently uploaded it to
 GitHub for the purpose of showing it to people who may be interested.*
